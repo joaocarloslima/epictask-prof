@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: postgres_g
+    environment:
+      - 'POSTGRES_DB=epictask'
+      - 'POSTGRES_PASSWORD=epictask'
+      - 'POSTGRES_USER=epictask'
+    ports:
+      - '5432:5432'
